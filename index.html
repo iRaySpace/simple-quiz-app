@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Application</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700,900" rel="stylesheet"> 
+    <style>
+
+        /* Global styles */
+        h1, h2, p, button, input { font-family: 'Fira Sans', sans-serif; }
+        h2 { font-weight: 400; }
+        
+        #quiz-app > h1, #quiz-app > h2 { text-align: center; }
+        
+        .main-content { 
+            margin: 0 auto; 
+            width: 960px; 
+            
+            -webkit-box-shadow: 0px 3px 5px 0px rgba(238,238,238,1);
+            -moz-box-shadow:    0px 3px 5px 0px rgba(238,238,238,1);
+            box-shadow:         0px 3px 5px 0px rgba(238,238,238,1);
+
+            border-radius:      3px 3px 3px 3px;
+            -moz-border-radius: 3px 3px 3px 3px;
+            -webkit-border-radius: 3px 3px 3px 3px;
+            border: 0px solid #000000;
+
+        }
+
+        .content-12 { margin: 0 10px; }
+
+        .question {
+            font-size: 24px;
+            font-weight: bold;
+            color: #929292;
+        }
+        
+        .question-box {
+            padding: 15px;
+        }
+        
+        .input-answer {
+            display: block;
+        }
+
+        .input-button {
+            color: #fff;
+            background-color: #ffa834;
+            border: 0;
+            float: right;
+            padding: 10px;
+        }
+
+        #quiz-app > .app-name { color: #ffa834; }
+        #quiz-app > .app-owner { color: #929292; }
+        
+    </style>
+</head>
+<body>
+
+    <div id="quiz-app">
+        <h1 class="app-name">Simple Quiz Application</h1>
+        <h2 class="app-owner">iRaySpace</h2>
+        <div class="main-content">
+            <div class="content-12 question-box">
+                <p class="question">Question</p>
+                <input type="text" name="user-answer" class="input-answer">
+                <button id="next" class="input-button">Next</button>
+                <p class="score"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <p>Some text</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
